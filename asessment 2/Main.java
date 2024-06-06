@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         mengelola pengelola = new mengelola();
@@ -17,8 +15,8 @@ public class Main {
             switch (macam) {
                 case "1":
                     System.out.print("Masukkan RT, nama dan nilai ");
-                    String rt = scanner.nextLine();
-                    String nama = scanner.nextLine();
+                    String rt = scanner.next(); scanner.nextLine();
+                    String nama = scanner.next(); scanner.nextLine();
                     int skor = scanner.nextInt();
                     scanner.nextLine();
                     pengelola.tambahPeserta(rt, nama, skor);
